@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.co.iamenigma.senior.MainActivity">
+
+    <Button
+        android:text="Send Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendLocation"
+        android:textSize="20sp"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:minHeight="55dip"
+        android:onClick="getLocation"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Send Text"
+        android:layout_width="match_parent"
+        android:id="@+id/textButton"
+        android:onClick="sendText"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:textSize="30sp"
+        android:minHeight="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendLocation"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="69dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/settings2"
+        android:id="@+id/settingsButton"
+        android:onClick="onSettings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Make Call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/makeCall"
+        android:onClick="onCall"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:textSize="30sp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/settingsButton"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
